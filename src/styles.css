@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+.App {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #2c3e50;
+}
+
+.chuck-app {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(https://www.teahub.io/photos/full/174-1745581_non-stop-chuck-norris.jpg);
+}
+
+.title {
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 1000;
+}
+
+.layout {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: "Space Mono", monospace;
+}
+
+form {
+  border: 1px solid lightgray;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  background-color: #2c3e50;
+}
+
+form label {
+  display: inline-block;
+  margin-top: 10px;
+  width: 100px;
+  vertical-align: top;
+}
+
+form label::before {
+  content: "\A";
+}
+
+form button {
+  margin-top: 30px;
+  display: block;
+}
+
+form input,
+form select,
+form textarea {
+  display: inline-block;
+  width: 200px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+.title-bar {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.joke-result {
+  margin: 2em auto;
+  position: relative;
+}
+
+.random-button {
+  margin: 2em auto;
+  position: relative;
+}
+
+.joke-result img {
+  position: absolute;
+  width: 70px;
+}
+.pic-1 {
+  left: 0;
+  transform: translateX(220%);
+}
+.pic-2 {
+  right: 0;
+  transform: translateX(280%);
+}
+
+.joke-result blockquote {
+  text-align: center;
+}
+
+.joke-result h3:hover {
+  color: #f15a24;
+}
+.joke-result h3:active {
+  color: #8c6239;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+}
+
+footer img {
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .pic-1 {
+    transform: translate(-55%, -100%);
+  }
+  .pic-2 {
+    transform: translate(55%, -100%);
+  }
+}
+
+.stars-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.stars {
+  display: flex;
+  flex-flow: row;
+  margin: 2em auto;
+  position: relative;
+}
